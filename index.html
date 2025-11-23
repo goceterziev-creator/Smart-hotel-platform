@@ -1,1 +1,108 @@
-404: Not Found
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏨 Neural Hotel System - AI Powered Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="neural-nav">
+        <div class="nav-brand">
+            <h2>🏨 Neural Hotels</h2>
+            <span class="ai-badge">AI Powered</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Открийте Перфектния Престой</h1>
+            <p>AI-асистирани резервации с интелигентни препоръки</p>
+        </div>
+    </section>
+
+    <!-- Booking System -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-card neural-glow">
+                <h3>🎯 Резервирайте Вашата Стая</h3>
+                
+                <!-- Room Selection -->
+                <div class="form-group">
+                    <label>🏨 Изберете Стая:</label>
+                    <select id="roomType" class="neural-select">
+                        <option value="standard">Стандартна стая - $80/нощ</option>
+                        <option value="deluxe">Делукс стая - $120/нощ</option>
+                        <option value="suite">Луксозен апартамент - $200/нощ</option>
+                    </select>
+                </div>
+
+                <!-- Date Selection -->
+                <div class="form-group">
+                    <label>📅 Дати на престой:</label>
+                    <input type="date" id="checkIn" class="neural-input">
+                    <input type="date" id="checkOut" class="neural-input">
+                </div>
+
+                <!-- Guests -->
+                <div class="form-group">
+                    <label>👥 Гости:</label>
+                    <input type="number" id="guests" class="neural-input" value="2" min="1" max="4">
+                </div>
+
+                <!-- AI Recommendation -->
+                <div class="ai-recommendation">
+                    <div class="ai-header">
+                        <span>🧠 ПЕТЯ препоръчва:</span>
+                    </div>
+                    <div id="aiSuggestion" class="ai-suggestion">
+                        Изберете стая и дати за AI препоръка
+                    </div>
+                </div>
+
+                <!-- Price Calculation -->
+                <div class="price-summary">
+                    <div class="price-line">
+                        <span>Цена на стая:</span>
+                        <span id="roomPrice">$0</span>
+                    </div>
+                    <div class="price-line">
+                        <span>Такси и данъци (18%):</span>
+                        <span id="taxAmount">$0</span>
+                    </div>
+                    <div class="price-total">
+                        <span>Общо:</span>
+                        <span id="totalPrice">$0</span>
+                    </div>
+                </div>
+
+                <!-- Book Button -->
+                <button id="bookBtn" class="neural-btn">🚀 Резервирай Сега</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Section -->
+    <section class="ai-assistant">
+        <div class="container">
+            <div class="ai-card">
+                <h3>🧠 AI Асистент ПЕТЯ</h3>
+                <div class="ai-chat">
+                    <div class="ai-message">
+                        Здравейте! Аз съм ПЕТЯ, вашият AI асистент за резервации. 
+                        Мога да ви препоръчам стая според вашите предпочитания!
+                    </div>
+                </div>
+                <button id="askPetya" class="neural-btn-outline">🎯 Попитай ПЕТЯ</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="petya-integration.js"></script>
+    <script src="payment-system.js"></script>
+</body>
+</html>

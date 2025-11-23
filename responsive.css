@@ -1,1 +1,52 @@
-404: Not Found
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .booking-section, .ai-assistant {
+        padding: 1rem;
+    }
+    
+    .booking-card, .ai-card {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .neural-nav {
+        padding: 1rem;
+    }
+    
+    .nav-brand {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .price-summary {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .booking-card, .ai-card {
+        padding: 1rem;
+    }
+    
+    .neural-btn {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+}
